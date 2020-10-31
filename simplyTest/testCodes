@@ -1,0 +1,120 @@
+use math;
+use io;
+
+#this is a single line comment
+
+/* this is a
+multi-line comment */
+
+#empty function
+function test1(input: ) output: nothing{
+
+}
+
+#data types and variables
+function test2(input: ) output: nothing
+{
+    int a = 5;  # var assignment
+    int b;      # var declare
+    b = 3;
+
+    string x = "Hello world!";
+    string y;
+    y = "Team insomniac";
+
+    bool on = true;
+    bool off;
+    off = false;
+
+    const int x = 5;
+}
+
+#operators
+function test3(input: int a, int b) output: int
+{
+    int total = a + b;
+    int sub = a - b;
+    int mul = a * b;
+    int div = a / b;
+    int x = 6;
+    int y = 4;
+    x++;
+    --y;
+    return total;
+}
+
+#keybaord input and console output
+function sqrt(input: int a) output: float
+{
+	 string x = "team insomniac";
+     display("hello world 1234 ");
+     display(x);
+
+     int a = keyin(1);
+}
+
+
+
+#library function call, return something
+function test4(input: int a) output: float
+{
+	float number = math.sqrt(a);
+    return number;
+}
+
+
+#if control structure
+function test5(input: ) output: nothing
+{
+    check(true) then{
+        int a = 4;
+    }
+    check(false) then{
+        bool x = true;
+    }
+
+    check(true) then
+    {
+       display("Hello world");
+    }otherwise check(true) then
+    {
+       display("Hello hell");
+    }otherwise
+    {
+       display("Hello heaven");
+    }
+
+    check(true) then{
+        int a = 4;
+        check(x==3) then{
+            int y = 6;
+        }otherwise{
+            display("hello");
+        }
+    }
+}
+
+#while loop
+function test6(input: ) output: nothing
+{
+   repeat(x>=4){
+        display("x>=4");
+   }
+}
+
+#for loop
+function test7(input: ) output: nothing
+{
+   repeat(int i; range: 1 to 10; change: 1){
+        display("team insomniac");
+   }
+}
+
+#lists
+function test8(input: ) output: nothing{
+    list: int arr1;
+    arr1 = [1, 2, 3];
+
+    list: string arr2 = ["hello", "world", "!!"];
+
+}
